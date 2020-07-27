@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1>Username:{{ username }}</h1>
+    <h2>List of your products:</h2>
+    <ol>
+        {% for product in products %}
+            <li><a href="{{ product.pk }}">{{ product.title }} {{ product.price }}RUB</a></li>
+        {% endfor %}
+    </ol>
+{% endblock %}

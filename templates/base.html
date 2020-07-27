@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Wexel</title>
+  <link rel="icon" href="{% static 'img/wexel_ico1.ico' %}" type="image/x-icon">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="{% static 'css/mdb.min.css' %}">
+  <!-- Your custom styles (optional) -->
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link rel="stylesheet" href="{% static 'slick/slick.css' %}">
+  <link rel="stylesheet" href="{% static 'slick/slick-theme.css' %}">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark blue scrolling-navbar">
+      <div class="container">
+        <a class="navbar-brand logoref" href="{% url 'index' %}"><img src="{% static 'img/logo_wexel.png' %}" alt="logo" class="logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse navfix scrolling-navbar" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'index' %}">Home</a>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown-container">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      For Sellers
+                  </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        {% if user.is_authenticated %}
+                            <a class="dropdown-item" href="{% url 'products:add' %}">Add product</a>
+                            <a class="dropdown-item" href="{% url 'sellers:profile' %}">{{ user.get_username }}</a>
+                            <a class="dropdown-item" href="{% url 'sellers:logout' %}">Logout</a>
+                        {% else %}
+                            <a class="dropdown-item" href="{% url 'sellers:login' %}">Login</a>
+                            <a class="dropdown-item" href="{% url 'sellers:register' %}">Sign up</a>
+                        {% endif %}
+                    </div>
+                </li>
+          </ul>
+          <div class="active-pink-4 mb-4" id="search">
+              <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+          </div>
+        </div>
+      </div>
+    </nav>
+  
+  </header>
+  <!-- Navbar -->
+        {% block content %}
+        {% endblock %}
+    </div>
+<!-- Footer -->
+<footer class="page-footer font-small blue pt-4">
+
+  <div class="container">
+    <!-- Footer Links -->
+  <div class="container-fluid text-center">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-6 mt-md-0 mt-3">
+
+        <!-- Content -->
+        <a class="foot-logo" href="#"><img src="{% static 'img/logo_wexel.png' %}" alt="logo" class="logo-foot"></a>
+        <p class="foot-text">Quality assurance</p>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none pb-3">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h5 class="text-uppercase">Social media</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!"><i class="fab fa-facebook-square"></i> fb/wexel_fb.com</a>
+          </li>
+          <li>
+            <a href="#!"><i class="fab fa-instagram"></i> @wexel_inst</a>
+          </li>
+          <li>
+            <a href="#!"><i class="fab fa-vk"></i> vk.com/wexel_vk</a>
+          </li>
+          <li>
+            <a href="#!"><i class="fab fa-telegram"></i> @wexel_tg</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h5 class="text-uppercase">contacts</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            Almaty, ave. Pushkyna
+          </li>
+          <li>
+            wexel@gmail.com
+          </li>
+          <li>
+            8-747-398-97-89
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+  </div>
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="https://mdbootstrap.com/"> WEXEL</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+  <!-- jQuery -->
+  <script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="{% static 'js/popper.min.js' %}"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+  <!-- MDB core JavaScript -->
+  <!-- <script type="text/javascript" src="js/mdb.min.js"></script> -->
+  <!-- Your custom scripts (optional) -->
+  <script src="{% static 'slick/slick.js' %}"></script>
+  <script src="{% static 'js/slider.js' %}"></script>
+  
+</body>
+</html>

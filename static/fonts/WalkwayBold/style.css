@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'WALKWAY';
+    src: local('WALKWAY Bold'), local('WALKWAY-Bold'),
+        url('WalkwayBold.woff2') format('woff2'),
+        url('WalkwayBold.woff') format('woff'),
+        url('WalkwayBold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }

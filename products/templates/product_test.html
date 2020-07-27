@@ -1,0 +1,258 @@
+ {% extends base.html %}
+ {% load static %}
+ <Main> 
+        <div class="container maincont">
+            <div class="row">
+                <div class="col-md-8">
+                    
+                    <h5>{{ products.title }} </h5>
+                    <div class="goods_descr_left">
+                        <p class="sold">Sold: 5000<br><span class="refunds">Refunds: 3</span></p>
+                        <p class="uploadinf">Uploaded: {{ products.date_created }}<br><span class="conttype">Content: text</span></p>
+                        <div class="goods_discount_tbl_holder gbg border_radius">
+                            <div class="goods_discount_info">
+                                Loyalty discount! If the total amount of your purchases from the seller <a href="/seller/dpakula/788397">{{ products.seller }}</a> more than:
+                            </div>
+					        <div>
+                                <table id="discountsTable">
+                                <thead>
+                                <tr>
+                                    <td>1500 $</td>
+                                    <td>the discount is</td>
+                                    <td>35%</td>
+                                </tr>
+                            </thead>
+                            <tbody class="disMore">
+                                <tr>
+                                    <td colspan="3" class="discounts-more">
+                                        <a onclick="$('#discountsTable tbody').html(_hiddenDiscount)">show all discounts</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td>1 $</td>
+                                    <td>the discount is</td>
+                                    <td>1%</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                        <script>var _hiddenDiscount = '<tr><td>1000 $</td><td>the discount is</td><td>30%</td></tr><tr><td>500 $</td><td>the discount is</td><td>7%</td></tr><tr><td>200 $</td><td>the discount is</td><td>4%</td></tr><tr><td>100 $</td><td>the discount is</td><td>3%</td></tr><tr><td>30 $</td><td>the discount is</td><td>2%</td></tr>';</script>
+                            </div>
+                            <div>
+					            <div class="goods_email_field">
+						            <!--<form method="post">-->
+                                        If you want to know your discount rate, please provide your email:<br>
+                                        <input id="email" name="email" type="email" value="" required="required">
+                                        <input type="submit" onclick="ItemDiscount($('#email').val(),2497625,'WMR')" value="Discount">
+                                        <div class="discount-info" id="discount-info">
+                                        </div>
+                                    <!--</form>-->
+					            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="goods_descr_right float-right"> <!-- div right -->
+                        <div class="goods_merchant_info">
+                            <div class="goods_merchant_info_icons clearfix">
+                                <a href="http://passport.wmtransfer.com//asp/CertView.asp?wmid=151137791274" target="_blank"><i data-tooltip="m=att&amp;id=788397" data-hasqtip="0"><img src="https://plati.ru/img/passport_ico_32.png" width="37" height="32"></i></a>  
+                            </div>
+                            <h2 id="seller">Seller</h2>                                
+                            <img src="https://plati.ru/img/icon-merchant-1.png">
+                            <a href="/seller/dpakula/788397" class="goods_merchant_name">{{ products.seller }}</a>
+                            <br>
+                            <a href="/seller/dpakula/788397">information about the seller and his items</a>
+                            <div class="goods_ask_merchant offline">
+                                <span><i></i>offline</span><a href="#" onclick="return PopUp(788397, 0, 2497625);">Ask a question</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="goods_descr_bottom ">
+                        <div class="goods_full_descr">
+                            <h2>Description</h2>
+                
+                            
+                            <div class="goods_descr_images">
+                            
+                                        <a rel="prettyPhoto[pp_gal]" href="//www.digiseller.ru/preview/788397/p1_2497625_805d7ec7.png"><img alt="NordVPN l SUBSRIPTION 2-3 YEARS ✅GUARANTEE (NORD VPN)🔥" itemprop="image" src="//www.digiseller.ru/preview/788397/p1_2497625_805d7ec7.png" "="" width="150" height="150" border="0" title="NordVPN l SUBSRIPTION 2-3 YEARS ✅GUARANTEE (NORD VPN)🔥"></a>
+                                        
+                                        <a rel="prettyPhoto[pp_gal]" href="//www.digiseller.ru/preview/788397/p1_2497625_b036cf19.png"><img alt="NordVPN l SUBSRIPTION 2-3 YEARS ✅GUARANTEE (NORD VPN)🔥" itemprop="image" src="//www.digiseller.ru/preview/788397/p1_2497625_b036cf19.png" "="" width="150" height="78" border="0" title="NordVPN l SUBSRIPTION 2-3 YEARS ✅GUARANTEE (NORD VPN)🔥"></a>
+                                        
+                                        <a rel="prettyPhoto[pp_gal]" href="//www.digiseller.ru/preview/788397/p1_2497625_77efe535.png"><img alt="NordVPN l SUBSRIPTION 2-3 YEARS ✅GUARANTEE (NORD VPN)🔥" itemprop="image" src="//www.digiseller.ru/preview/788397/p1_2497625_77efe535.png" "="" width="150" height="103" border="0" title="NordVPN l SUBSRIPTION 2-3 YEARS ✅GUARANTEE (NORD VPN)🔥"></a>
+                                        
+                                        <a rel="prettyPhoto[pp_gal]" href="//www.digiseller.ru/preview/788397/p1_2497625_7fe85692.png"><img alt="NordVPN l SUBSRIPTION 2-3 YEARS ✅GUARANTEE (NORD VPN)🔥" itemprop="image" src="//www.digiseller.ru/preview/788397/p1_2497625_7fe85692.png" "="" width="150" height="100" border="0" title="NordVPN l SUBSRIPTION 2-3 YEARS ✅GUARANTEE (NORD VPN)🔥"></a>
+                                        
+                                        <a rel="prettyPhoto[pp_gal]" href="//www.digiseller.ru/preview/788397/p1_2497625_2287ab06.jpg"><img alt="NordVPN l SUBSRIPTION 2-3 YEARS ✅GUARANTEE (NORD VPN)🔥" itemprop="image" src="//www.digiseller.ru/preview/788397/p1_2497625_2287ab06.jpg" "="" width="150" height="86" border="0" title="NordVPN l SUBSRIPTION 2-3 YEARS ✅GUARANTEE (NORD VPN)🔥"></a>
+                                        
+                            </div>
+                            <div class="goods-descr-text" itemprop="description">
+                            <!-- text description -->
+                            <p>
+                            <attention>Enter to account: <a class="target" target="_blank" href="https://ucp.nordvpn.com/login/">https://ucp.nordvpn.com/login/</a>            &gt;&gt;&gt; You will get account ( login:password) &lt;&lt;&lt;
+                <br>
+                <br>❗ Guarantee — in case of malfunction of the account, a replacement will be made.
+                <br>
+                <br>* The warranty is valid for 4 months from the date of purchase.
+                <br>* Ready to help </attention>
+                <br><attention><delivery> Leave GOOD FEEDBACK after buying. It´s important for me! Thanks. </delivery> </attention>
+                <br><attention><delivery> 📌 Access to mail - do not provide!
+                <br>📌 Change the data is prohibited!
+                <br>📌 If you have any problems with access to your account, you will receive a replacement.
+                <br>📌 There is no refund, only a replacement if the account is inoperable. </delivery></attention> 
+                <br><attention><delivery> 📦 Buying this product you get: </delivery>
+                <br>✅ NordVPN Account
+                <br>✅ Account subscription from 2022 to 2023 (2024) years
+                <br>* From the moment of purchase you get a VPN with a subscription for 2 - 3 (4) years
+                <br>✅ Instant delivery of goods to your mail
+                <br>✅ Type data: Login &amp; Password &amp; LICENSE EXPIRATION DATE
+                <br>✅ Operational support in case of any questions
+                <br>✅ GUARANTEE on purchased goods
+                <br>* In case of problems, please contact the personal chat with the seller. </attention>
+                            </p>
+                            </div>
+                        </div>	<!-- end full description -->
+                        
+                        <div class="descr_additional_description">
+                            <h2>Additional information</h2>
+                            <div>
+                                <p><delivery> <attention>Music Service: </attention> SPOTIFY PREMIUM (On your account): <a class="target" target="_blank" href="https://www.plati.market/itm/spotify-premium-na-vash-lichnyj-akkaunt-garantija/2747458">https://www.plati.market/itm/spotify-premium-na-vash-lichnyj-akkaunt-garantija/2747458</a>
+                <br><attention>Twitch: </attention> Twitch BITS: <a class="target" target="_blank" href="https://www.plati.market/itm/twitch-bits-cheers-bitsy-na-vash-tvich-cheers-bits/2725169">https://www.plati.market/itm/twitch-bits-cheers-bitsy-na-vash-tvich-cheers-bits/2725169</a>
+                <br>Twitch Prime for LOOT: <a class="target" target="_blank" href="https://plati.market/itm/twitch-prime-account-prime-dlja-luta-vse-bez-lol/2490562">https://plati.market/itm/twitch-prime-account-prime-dlja-luta-vse-bez-lol/2490562</a>
+                <br><attention>VPN </attention> Nord VPN (2-3 YEARS): <a class="target" target="_blank" href="https://www.plati.market/itm/nordvpn-l-podpiska-2-3-goda-garantija-nord-vpn/2497625">https://www.plati.market/itm/nordvpn-l-podpiska-2-3-goda-garantija-nord-vpn/2497625</a>
+                <br>Nord VPN (1-2 YEARS): <a class="target" target="_blank" href="https://plati.market/itm/nordvpn-l-podpiska-1-2-goda-garantija-nord-vpn/2576131">https://plati.market/itm/nordvpn-l-podpiska-1-2-goda-garantija-nord-vpn/2576131</a>
+                <br>Nord VPN (6-12 MONTHS): <a class="target" target="_blank" href="https://www.plati.market/itm/nordvpn-l-podpiska-6-12-mesjacev-garantija-nordvpn/2497616">https://www.plati.market/itm/nordvpn-l-podpiska-6-12-mesjacev-garantija-nordvpn/2497616</a> 
+                <br>Express VPN (FOR MOBILE) AUTO RENEWAL: <a class="target" target="_blank" href="https://www.plati.market/itm/expressvpn-avtoprodlenie-dlja-telefona-express-vpn/2725259">https://www.plati.market/itm/expressvpn-avtoprodlenie-dlja-telefona-express-vpn/2725259</a>
+                <br>Express VPN (FOR MOBILE) 2-6 MONTHS: <a class="target" target="_blank" href="https://www.plati.market/itm/expressvpn-2-6-mesjacev-dlja-telefona-express-vpn/2724732">https://www.plati.market/itm/expressvpn-2-6-mesjacev-dlja-telefona-express-vpn/2724732</a>
+                <br>Express VPN (FOR MOBILE) 6-12 MONTHS: <a class="target" target="_blank" href="https://www.plati.market/itm/expressvpn-1-year-tol-ko-dlja-telefona-express-vpn/2723406">https://www.plati.market/itm/expressvpn-1-year-tol-ko-dlja-telefona-express-vpn/2723406</a>
+                <br>VYPR VPN (6-12 MONTHS) : <a class="target" target="_blank" href="https://www.plati.market/itm/vyprvpn-premium-podpiska-8-12-mesjacev-vypr-vpn/2723809">https://www.plati.market/itm/vyprvpn-premium-podpiska-8-12-mesjacev-vypr-vpn/2723809</a>
+                <br>VYPR VPN (1-6 MONTHS): <a class="target" target="_blank" href="https://www.plati.market/itm/vyprvpn-premium-podpiska-1-6-mesjacev-vypr-vpn/2721255">https://www.plati.market/itm/vyprvpn-premium-podpiska-1-6-mesjacev-vypr-vpn/2721255</a>
+                <br><attention>OTHERS: </attention> CRUNCHYROLL PREMIUM: <a class="target" target="_blank" href="https://www.plati.market/itm/crunchyroll-premium-anime-avtoprodlenie-garantija/2776184">https://www.plati.market/itm/crunchyroll-premium-anime-avtoprodlenie-garantija/2776184</a>
+                <br>GRAMMARLY PREMIUM: <a class="target" target="_blank" href="https://www.plati.market/itm/grammarly-premium-akkaunt-garantija-6-mesjacev/2790315">https://www.plati.market/itm/grammarly-premium-akkaunt-garantija-6-mesjacev/2790315</a> </delivery></p>
+                            </div>
+                        </div>
+                        
+                        <a name="responses"></a>
+                        <div class="goods_reviews">
+                            <h2>Feedback</h2><span>297<i class="platiru-loader"></i></span>
+                            <span id="ResponsesBlock"><div class="goods_reviews_tabs"><a href="javascript:void();" onclick="return Responses(0, 'pins', 1, 5)" class="selected">all</a><a href="javascript:void();" onclick="return Responses(1, 'pins', 1, 5);">positive</a><a href="javascript:void();" onclick="return Responses(2, 'pins', 1, 5);">negative</a></div><div class="goods_reviews_content"><div data-idr="7621949"><span class="review_text">Все гуд</span><span class="review_info"><i class="good_review"></i>2020-03-8 yesterday</span></div><div data-idr="7621637"><span class="review_text">I got account from 8/3/2020 to 1/4/2022</span><span class="review_info"><i class="good_review"></i>2020-03-8 yesterday</span></div><div data-idr="7619862"><span class="review_text">Все в порядке, спасибо</span><span class="review_info"><i class="good_review"></i>2020-03-7</span></div><div data-idr="7619735"><span class="review_text">it works</span><span class="review_info"><i class="good_review"></i>2020-03-7</span></div><div data-idr="7618936"><span class="review_text">I check username and password,can login</span><span class="review_info"><i class="good_review"></i>2020-03-7</span></div><div class="pages_nav"><a class="active" onclick="return Responses(0, 'pins', 1, 5);" href="javascript:void();">1</a><a onclick="return Responses(0, 'pins', 2, 5);" href="#">2</a><a onclick="return Responses(0, 'pins', 3, 5);" href="#">3</a><a onclick="return Responses(0, 'pins', 4, 5);" href="#">4</a><a onclick="return Responses(0, 'pins', 5, 5);" href="#">5</a><a onclick="return Responses(0, 'pins', 6, 5);" href="#">6</a><a onclick="return Responses(0, 'pins', 7, 5);" href="#">7</a><span>...</span><a onclick="return Responses(0, 'pins', 60, 5);" href="#">60</a></div></div></span>
+                            <div class="goods_reviews_stats">
+                                
+                                </div>
+                            
+                        </div>	<!-- end reviews -->
+                            
+                    <div class="goods_related">
+                    <h2>Related to item "NordVPN l SUBSRIPTION 2-3 YEARS ✅GUARANTEE (NORD VPN)🔥":</h2>
+                    <div>
+                    <div class="goods_related_item"><div><a title="Безопасность » VPN" href="/itm/nordvpn-subsription-6-12-months-guarantee-nord-vpn/2497616?f=n"><img src="//graph.digiseller.ru/img.ashx?maxlength=120&amp;id_d=2497616"></a></div><div><a title="Безопасность » VPN" href="/itm/nordvpn-subsription-6-12-months-guarantee-nord-vpn/2497616?f=n">NordVPN SUBSRIPTION 6 - 12 MONTHS ✅GUARANTEE (NORD VPN)🔥</a></div></div><div class="goods_related_item"><div><a title="Counter-Strike » Внутриигровые предметы" href="/itm/cs-go-random-ak-47-high-odds-asiimov-5-items-gift/2700623?f=n"><img src="//graph.digiseller.ru/img.ashx?maxlength=120&amp;id_d=2700623"></a></div><div><a title="Counter-Strike » Внутриигровые предметы" href="/itm/cs-go-random-ak-47-high-odds-asiimov-5-items-gift/2700623?f=n">✅CS:GO - Random AK - 47(High odds Asiimov) + 5 items gift</a></div></div><div class="goods_related_item"><div><a title="Игры » Разные" href="/itm/red-dead-redemption-2-online-wholesale-price-key/2726467?f=n"><img src="//graph.digiseller.ru/img.ashx?maxlength=120&amp;id_d=2726467"></a></div><div><a title="Игры » Разные" href="/itm/red-dead-redemption-2-online-wholesale-price-key/2726467?f=n">Red Dead Redemption 2 + ONLINE Wholesale Price Key</a></div></div><div class="goods_related_item"><div><a title="Игровые аккаунты » Аккаунты GTA V" href="/itm/grand-theft-auto-v-gta-5-online-full-access-warranty/1847398?f=n"><img src="//graph.digiseller.ru/img.ashx?maxlength=120&amp;id_d=1847398"></a></div><div><a title="Игровые аккаунты » Аккаунты GTA V" href="/itm/grand-theft-auto-v-gta-5-online-full-access-warranty/1847398?f=n">GRAND THEFT AUTO V/GTA 5[ONLINE/FULL ACCESS/WARRANTY]</a></div></div><div class="goods_related_item"><div><a title="Игровые аккаунты » Аккаунты Red Dead Redemption 2" href="/itm/red-dead-redemption-2-social-club-mail-change/2745010?f=n"><img src="//graph.digiseller.ru/img.ashx?maxlength=120&amp;id_d=2745010"></a></div><div><a title="Игровые аккаунты » Аккаунты Red Dead Redemption 2" href="/itm/red-dead-redemption-2-social-club-mail-change/2745010?f=n">Red Dead Redemption 2 [Social Club]+[Mail change]</a></div></div><div class="goods_related_item"><div><a title="Игровые аккаунты » Аккаунты CS:GO" href="/itm/cs-go-4000-hours--full-access-game-100-safe/2682440?f=n"><img src="//graph.digiseller.ru/img.ashx?maxlength=120&amp;id_d=2682440"></a></div><div><a title="Игровые аккаунты » Аккаунты CS:GO" href="/itm/cs-go-4000-hours--full-access-game-100-safe/2682440?f=n">CS:GO - 4000 HOURS! ✔️ Full Access + GAME ❤️</a></div></div>	
+                    </div></div>	
+                
+                        <div class="warning">
+                            <noindex>
+                            In order to counter copyright infringement and property rights, we ask you to immediately inform us at <a target="_blank" href="mailto:support@plati.market">support@plati.market</a> the fact of such violations and to provide us with reliable information confirming your copyrights or rights of ownership. Email must contain your contact information (name, phone number, etc.)
+                            </noindex>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="right_side">
+                        <div class="goods_add_to_note">
+                            <!--блокнот-->
+                            
+                            <a id="n2497625" class="checkbox unchecked" onclick="return noteItem(2497625,0);"></a>
+                            <a onclick="return noteItem(2497625,0);">In Favorites</a>
+                        </div>                        
+                        <div class="goods_order_form" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+                        <meta itemprop="availability" content="InStock">
+                        <meta itemprop="price" content="1.2588">
+                        <meta itemprop="priceCurrency" content="USD">                                        
+                        <form action="https://www.digiseller.market/asp2/pay.asp" accept-charset="utf-8" method="POST" name="PriceForm" id="PriceForm" onsubmit="javascript:return(CheckIagree());">
+                        
+                        <div class="goods_order_form_quanuty ">
+        
+                            <!--БЛОК С ЦЕНОЙ-->
+                            
+                                <div class="goods_order_form_quanuty_price">
+                                <span><b></b><i id="product_price">{{products.price}}</i> <i id="product_currency">Rub.</i></span>
+                                </div>
+                            
+                            <!--БЛОК С ЦЕНОЙ-->
+        
+                            
+                            <div class="goods_order_form_forpartners">
+                            Affiliates:
+                            
+                            <a href="/partners/?show=goods&amp;idd=2497625"><strong>0,01</strong> $</a> — <a href="/partners/?show=goods&amp;idd=2497625">how to earn</a>
+                            </div>
+                            
+        
+                    </div> <!--quantity!!-->
+        
+                    <div class="goods_order_form_buttons">
+                        <!--СПОСОБЫ ОПЛАТЫ-->
+                        <span>Pay with:</span>
+                        <div class="goods_pay_by">
+                        <div class="sort_by goods_pay_by_select clearfix" id="CurrBlock">
+                        <div class="ddOutOfVision" id="TypeCurr_msddHolder" style="height: 0px; overflow: hidden; position: absolute;"><select class="select_dd select-with-currency" name="TypeCurr" id="TypeCurr" onchange="changeCurr(this.value);" tabindex="-1"><option option_curr="" title="/images/pm/WMZ_16.svg" value="WMZ">WebMoney</option><option option_curr="" title="https://plati.ru/images/pm/ZCC_16.svg" value="RCC" selected="">Debit or Credit Card</option><option title="/images/pm/BTC_16.svg" value="BTC">Bitcoin</option><option title="/images/pm/QSR_16.svg" value="QSR">QIWI</option><option title="/images/pm/PCR_16.svg" value="PCR">Yandex.Money</option><option title="/images/pm/MMR_16.svg" value="MMR">Steam Skin</option><option title="/images/pm/ALP_16.svg" value="ALP">Alipay</option><option title="/images/pm/UNP_16.svg" value="UNP">Unionpay</option><option title="/images/pm/BNK_16.svg" value="BNK">Internet Banking</option><option option_curr="" title="/images/pm/PPZ_16.svg" value="PPZ">WM Card</option><option option_curr="" title="/images/pm/GCZ_16.svg" value="GCZ">Gift Card</option></select></div><div class="dd ddcommon borderRadius" id="TypeCurr_msdd" tabindex="0" style="width: 250px;"><div class="ddTitle borderRadiusTp"><span class="divider"></span><span class="ddArrow arrowoff"></span><span class="ddTitleText " id="TypeCurr_title"><img src="https://plati.ru/images/pm/ZCC_16.svg" class="fnone"><span class="ddlabel">Debit or Credit Card</span><span class="description" style="display: none;"></span></span></div><input id="TypeCurr_titleText" type="text" autocomplete="off" class="text shadow borderRadius" style="display: none;"><div class="ddChild ddchild_ border shadow" id="TypeCurr_child" style="z-index: 9999; display: none; position: absolute; visibility: visible; height: 379px;"><ul><li class="enabled _msddli_"><img src="/images/pm/WMZ_16.svg" class="fnone"><span class="ddlabel">WebMoney</span><div class="clear"></div></li><li class="enabled _msddli_ selected"><img src="/images/pm/ZCC_16.svg" class="fnone"><span class="ddlabel">Debit or Credit Card</span><div class="clear"></div></li><li class="enabled _msddli_"><img src="/images/pm/BTC_16.svg" class="fnone"><span class="ddlabel">Bitcoin</span><div class="clear"></div></li><li class="enabled _msddli_"><img src="/images/pm/QSR_16.svg" class="fnone"><span class="ddlabel">QIWI</span><div class="clear"></div></li><li class="enabled _msddli_"><img src="/images/pm/PCR_16.svg" class="fnone"><span class="ddlabel">Yandex.Money</span><div class="clear"></div></li><li class="enabled _msddli_"><img src="/images/pm/MMR_16.svg" class="fnone"><span class="ddlabel">Steam Skin</span><div class="clear"></div></li><li class="enabled _msddli_"><img src="/images/pm/ALP_16.svg" class="fnone"><span class="ddlabel">Alipay</span><div class="clear"></div></li><li class="enabled _msddli_"><img src="/images/pm/UNP_16.svg" class="fnone"><span class="ddlabel">Unionpay</span><div class="clear"></div></li><li class="enabled _msddli_"><img src="/images/pm/BNK_16.svg" class="fnone"><span class="ddlabel">Internet Banking</span><div class="clear"></div></li><li class="enabled _msddli_"><img src="/images/pm/PPZ_16.svg" class="fnone"><span class="ddlabel">WM Card</span><div class="clear"></div></li><li class="enabled _msddli_"><img src="/images/pm/GCZ_16.svg" class="fnone"><span class="ddlabel">Gift Card</span><div class="clear"></div></li></ul></div></div><div class="ddOutOfVision" id="TypeCurrAdd_msddHolder" style="height: 0px; overflow: hidden; position: absolute;"><select class="select_dd" name="TypeCurrAdd" id="TypeCurrAdd" onchange="changeCurr(this.value);" tabindex="-1"><option value="ZCC">USD</option><option value="ECC">EUR</option><option value="RCC" selected="">RUB</option></select></div><div class="dd ddcommon borderRadius" id="TypeCurrAdd_msdd" tabindex="0" style="width: 64px;"><div class="ddTitle borderRadiusTp"><span class="divider"></span><span class="ddArrow arrowoff"></span><span class="ddTitleText " id="TypeCurrAdd_title"><span class="ddlabel">RUB</span><span class="description" style="display: none;"></span></span></div><input id="TypeCurrAdd_titleText" type="text" autocomplete="off" class="text shadow borderRadius" style="display: none;"><div class="ddChild ddchild_ border shadow" id="TypeCurrAdd_child" style="z-index: 9999; display: none; position: absolute; visibility: visible; height: 120px;"><ul><li class="enabled _msddli_"><span class="ddlabel">USD</span><div class="clear"></div></li><li class="enabled _msddli_"><span class="ddlabel">EUR</span><div class="clear"></div></li><li class="enabled _msddli_ selected"><span class="ddlabel">RUB</span><div class="clear"></div></li></ul></div></div>
+                        </div>
+                        </div>
+                        <!--/СПОСОБЫ ОПЛАТЫ-->
+        
+                        <!--ПАРАМЕТРЫ-->
+                        
+                        <!--/ПАРАМЕТРЫ-->
+                        <div class="goods_order_form_agreement">
+                            <a id="agreement_checkbox" class="checkbox checked" onclick="$(this).toggleClass('checked');"></a>
+                            <span>i agree with "<a href="/buyerterms/" target="_blank">Terms for Customers</a>"</span>
+                        </div>
+                        <div class="goods_order_form_btns">
+                            
+                                <button id="btn_next">Buy Now</button>
+                            
+                            <button id="btn_cart" type="button" onclick="toCart('2497625')">Add to Cart</button>
+                        </div>
+                        <script>
+                            $("select").msDropDown({ visibleRows: 8 });
+                            $(document).ready(function () {
+                                getAmount(idd);
+                                _failpage = "https://plati.ru/itm/nordvpn-l-subsription-2-3-years-guarantee-nord-vpn/2497625";
+                            });
+                        </script>
+                    </div>
+        
+                    <input type="hidden" name="ID_D" value="2497625">
+                    
+                    <input type="hidden" name="Email" id="Email_buyer" value="">
+                    
+                    <input type="hidden" name="Agent" value="0">
+                    <input type="hidden" name="FailPage" value="https://plati.ru/itm/nordvpn-l-subsription-2-3-years-guarantee-nord-vpn/2497625">
+                    <input type="hidden" name="customerid" value="1060fc6f488948d4ade4d25ebb4204ea">
+                    <input type="hidden" name="vz" value="2b19904b-df89-4f2c-bc21-d86c68536055">
+                    <input type="hidden" name="promocode" id="promocode" value="">
+                    <input type="hidden" name="lang" value="en-US">
+                    <input type="hidden" name="product_id" value="2497625">
+                    <input type="hidden" name="_ow" value="1">
+        
+                     </form>
+        
+        
+                    
+                        <form method="POST">
+                            <div class="goods_promo_field">
+                            Buy this item cheaper:<br>
+                            <input id="pc" name="pc" type="text" placeholder="Have a promo code?"><input onclick="return PromoInfo();" type="submit" value="Apply">
+                            <div style="display:none;" class="cheaper-offer" id="promoinfo"></div>
+                            </div>
+                        </form>
+                    
+        
+                    </div>  <!-- goods_order_form? -->
+        
+                 
+        
+        
+                </div>
+                </div>
+            </div>
+        </div>
+    </Main>

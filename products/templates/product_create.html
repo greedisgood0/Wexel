@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'products/css/style.css' %}">
+{% block content %}
+    <h1>Add Product:</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ product_form.as_p }}
+        <input type="submit" value="Add Product">
+    </form>
+{% endblock %}

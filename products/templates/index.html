@@ -1,0 +1,137 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <main>
+    <div class="container main">
+        <div class="row">
+          <div class="col-md-2 left-section">		<a href="#" class="close_ls"></a>
+            <div class="left_catalog">
+                <a href="catf/Keys-and-Pins/20630">Activation keys</a>
+                <ul>
+                    <li><a href="/cat/ip-telephony/13">IP Telephony</a></li>
+                    <li><a href="/games/" style=font-weight:bold;>Games</a></li>
+                    <li><a href="/cat/debit-cards/11354">Debit Cards</a></li>
+                    <li><a href="/cat/mobile-telephony/12">Mobile Telephony</a></li>
+                    <li><a href="/cat/satellite-tv/9168">Satellite TV</a></li>
+                </ul>
+                <a href="catf/Software/21059">Software</a>
+                <ul><li><a href="/cat/pc/121">PC</a></li>
+                    <li><a href="/cat/security/70">Security</a></li>
+                    <li><a href="/cat/office-software/92">Office software</a></li>
+                    <li><a href="/cat/games/51">Games</a></li>
+                    <li><a href="/cat/internet/7">Internet</a></li>
+                    <li><a href="/cat/cell-phones/376">Cell Phones</a></li>
+                    <li><a href="/cat/multimedia-graphics/42">Multimedia & Graphics</a></li>
+                    <li><a href="/cat/education-science-engineering/111">Education, Science & Engineering</a></li>
+                    <li><a href="/cat/programming/60">Programming</a></li>
+                    <li><a href="/cat/seo/11326">SEO</a></li><li><a href="/cat/desktop/105">Desktop</a></li>
+                    <li><a href="/cat/editors/77">Editors</a></li><li><a href="/cat/software-for-pocket-pc/125">Software for Pocket PC</a></li>
+                    <li><a href="/cat/utilities/82">Utilities</a></li>
+                </ul>
+                <a href="catf/Digital-Goods/19830">Digital Products</a>
+                <ul><li><a href="/cat/itunes-app-store/19830">iTunes & App Store</a></li>
+                    <li><a href="/cat/audiobooks/22819">Audiobooks</a></li>
+                    <li><a href="/cat/databases/378">Databases</a></li>
+                    <li><a href="/cat/banner-networks/139">Banner networks</a></li>
+                    <li><a href="/cat/courses-lessons/20363">Courses, Lessons</a></li>
+                    <li><a href="/cat/design/18409">Design</a></li>
+                    <li><a href="/cat/access-to-resources/198">Access to Resources</a></li>
+                    <li><a href="/cat/game-accounts/21940">Game Accounts</a></li>
+                    <li><a href="/cat/arts/20446">Arts</a></li>
+                    <li><a href="/cat/mobile-phones/3526">Mobile Phones</a></li>
+                    <li><a href="/cat/gift-cards/21895">Gift Cards</a></li>
+                    <li><a href="/cat/invites/21708">Invites</a></li>
+                    <li><a href="/cat/sports-predictions/21655">Sports Predictions</a></li>
+                    <li><a href="/cat/miscellaneous/5">Miscellaneous</a></li>
+                    <li><a href="/cat/active-advertising-systems/431">Active Advertising Systems</a></li>
+                    <li><a href="/cat/social-networks/24274">Social Networks</a></li>
+                    <li><a href="/cat/photos/7715">Photos</a></li>
+                    <li><a href="/cat/hosting/158">Hosting</a></li>
+                    <li><a href="/cat/templates/3572">Templates</a></li>
+                </ul>
+                <a href="cat/E-Books/19808">EBooks</a>
+                <ul><li><a href="/cat/security/163">Security</a></li>
+                    <li><a href="/cat/business-economics/17">Business & Economics</a></li>
+                    <li><a href="/cat/for-children/26">For Children</a></li>
+                    <li><a href="/cat/house-family-entertainment/27">House, Family & Entertainment</a></li>
+                    <li><a href="/cat/newspapers-magazines/19">Newspapers & Magazines</a></li>
+                    <li><a href="/cat/arts-culture/25">Arts & Culture</a></li>
+                    <li><a href="/cat/computers/21">Computers</a></li>
+                    <li><a href="/cat/books-in-foreign-languages/22">Books in Foreign Languages</a></li>
+                    <li><a href="/cat/medicine/30">Medicine</a></li>
+                    <li><a href="/cat/education-science/31">Education & Science</a></li>
+                    <li><a href="/cat/website-promotion/11327">Website Promotion</a></li>
+                    <li><a href="/cat/dictionaries-encyclopedias/28">Dictionaries & Encyclopedias</a></li>
+                    <li><a href="/cat/sport-tourism/406">Sport, Tourism</a></li>
+                    <li><a href="/cat/engineering/29">Engineering</a></li>
+                    <li><a href="/cat/fiction/20">Fiction</a></li>
+                    <li><a href="/cat/esoteric/32">Esoteric</a></li>
+                    <li><a href="/cat/law/24">Law</a></li>
+                  </ul>
+            </div>
+        </div>
+          <div class="col-md-10 right-section">
+            <div class="row">
+              <div class="col-8 maincont">
+                <h6>Recommended</h6>
+                <table class="goods-table">
+                {% for product in products %}
+                  <tbody>
+                    <tr class="colored_row">
+                      <td class="product-title bold">
+                        <div>
+                          <a href="products/all/{{ product.pk }}">{{ product.title }}</a>
+                        </div>
+                      </td>
+                      <td class="product-price bold">
+                        <div class="product-price-inner">
+                          <div>{{ product.price }} RUB </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                {% endfor %}
+                </table>
+              </div>
+              <div class="col-4 secondcont">
+                <div class="col-12 preorders">
+                  <div class="games_slider" id="slider-games">
+                    <a href="/games/preorders/"><u>Pre-order</u></a>
+				            <div class="games_slider_nav single-item">
+                      <div style="width: 100%; display: inline-block; padding-left: 5px;">
+                        <a href="/games/shadowlands/867" title="Shadowlands" tabindex="-1">
+                            <img width="105" height="131" src="{% static "img/wow.png" %}" alt="Shadowlands" title="Pre-order Shadowlands Release date: 31.12.2020">
+                        </a>
+                      </div>
+                      <div style="width: 100%; display: inline-block; padding-left: 5px;">
+                        <a href="/games/shadowlands/867" title="Shadowlands" tabindex="-1">
+                            <img width="105" height="131" src="{% static "img/wow.png" %}" alt="Shadowlands" title="Pre-order Shadowlands Release date: 31.12.2020">
+                        </a>
+                      </div>
+                      <div style="width: 100%; display: inline-block; padding-left: 5px;">
+                          <a href="/games/shadowlands/867" title="Shadowlands" tabindex="-1">
+                              <img width="105" height="131" src="{% static "img/wow.png" %}" alt="Shadowlands" title="Pre-order Shadowlands Release date: 31.12.2020">
+                          </a>
+                      </div>
+                      <div style="width: 100%; display: inline-block; padding-left: 5px;">
+                          <a href="/games/shadowlands/867" title="Shadowlands" tabindex="-1">
+                              <img width="105" height="131" src="{% static "img/wow.png" %}" alt="Shadowlands" title="Pre-order Shadowlands Release date: 31.12.2020">
+                          </a>
+                      </div>
+                    </div>
+            <!-- <ul class="slick-dots" style="display: block;" role="tablist"><li class="slick-active" role="presentation"><button type="button" role="tab" id="slick-slide-control00" aria-controls="slick-slide00" aria-label="1 of 6" tabindex="0" aria-selected="true">1</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control01" aria-controls="slick-slide02" aria-label="2 of 6" tabindex="-1">2</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control02" aria-controls="slick-slide04" aria-label="3 of 6" tabindex="-1">3</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control03" aria-controls="slick-slide06" aria-label="4 of 6" tabindex="-1">4</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control04" aria-controls="slick-slide08" aria-label="5 of 6" tabindex="-1">5</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control05" aria-controls="slick-slide010" aria-label="6 of 6" tabindex="-1">6</button></li></ul> -->
+                </div>
+                    <!-- <span>to guarantee getting the key<br />in the first minute of the official
+                  123
+                </div>
+                <div class="col-12 popular">
+                  123
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </main>
+{% endblock %}
